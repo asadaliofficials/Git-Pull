@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Git Pull</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="top">
+				<h1>Git Pull</h1>
+				<p>
+					Design & Developed by
+					<strong>ASAD ALI</strong>
+				</p>
+				<form action="">
+					<div class="input">
+						<box-icon type="logo" size="lg" name="github"></box-icon>
+						<input
+							type="text"
+							id="username"
+							autocomplete="off"
+							name="username"
+							placeholder="Enter GitHub username"
+						/>
+						<button class="submit" type="submit">Search</button>
+						<div class="suggestionContainer">
+							<ul>
+								fetching data, please wait...
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="middle">
+				<div class="card">
+					<div class="icon">
+						<box-icon type="solid" color="#a72863" name="book-content" size="md"></box-icon>
+					</div>
+					<div class="text">
+						<h1>---</h1>
+						<h3>Public Repos</h3>
+					</div>
+				</div>
+				<div class="card">
+					<div class="icon icon2">
+						<box-icon type="solid" color="green" name="group" size="md"></box-icon>
+					</div>
+					<div class="text">
+						<h1>---</h1>
+						<h3>Followers</h3>
+					</div>
+				</div>
+				<div class="card">
+					<div class="icon icon3">
+						<box-icon type="solid" color="#5748b6" name="user-plus" size="md"></box-icon>
+					</div>
+					<div class="text">
+						<h1>---</h1>
+						<h3>Following</h3>
+					</div>
+				</div>
+				<div class="card">
+					<div class="icon icon4">
+						<box-icon color="orangered" name="code-alt" size="md"></box-icon>
+					</div>
+					<div class="text">
+						<h1>---</h1>
+						<h3>Git Snippets</h3>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="left">
+					<!-- <p class="available">.</p> -->
+					<div class="header">
+						<div class="text">
+							<h1>Name</h1>
+							<a href="#">@username</a>
+							<h3>● account-type</h3>
+							<h4>
+								Account Created:
+								<i>date</i>
+							</h4>
+						</div>
+						<img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="img" />
+					</div>
+					<p class="bio">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque. Lorem ipsum dolor
+						sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Fugit.
+					</p>
+					<ul>
+						<li>
+							<box-icon size="sm" type="solid" name="buildings"></box-icon>
+							<strong>company</strong>
+						</li>
+						<li>
+							<box-icon size="sm" type="solid" name="map"></box-icon>
+							<strong>location</strong>
+						</li>
+						<li>
+							<box-icon size="sm" name="link"></box-icon>
+							<a href="#">user-blog</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<h2>Public Repositories:</h2>
+					<p>0/00</p>
+					<div class="repos">
+						<ul></ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+		<script src="script.js"></script>
+	</body>
+</html>
