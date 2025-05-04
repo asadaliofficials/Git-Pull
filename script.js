@@ -58,11 +58,8 @@ async function checkLimits(p) {
 let searchedData = {};
 async function getSearchResult(query) {
 	if (query in searchedData) {
-		console.log('data found in cache...');
 		return searchedData[query];
 	} else {
-		console.log('api called for user search');
-
 		let raw = await fetch(`https://api.github.com/search/users?q=${query}&per_page=5`);
 		let data = await raw.json();
 		searchedData[query] = data;
@@ -70,7 +67,6 @@ async function getSearchResult(query) {
 	}
 }
 function setSearchData(arr) {
-	console.log(arr);
 	let clutter = '';
 	arr.forEach(element => {
 		let temp = `
@@ -140,7 +136,6 @@ async function getData(username) {
 		let data = await raw.json();
 		return data;
 	} catch (error) {
-		console.log('nooooooooooooooo');
 		console.log(error);
 
 		return false;
@@ -152,7 +147,6 @@ async function getRepos(username) {
 		let data = await raw.json();
 		return data;
 	} catch (error) {
-		console.log('nooooooooooooooo');
 		console.log(error);
 		return false;
 	}
