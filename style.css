@@ -170,6 +170,7 @@ main {
 			border-radius: 50%;
 			object-fit: cover;
 			object-position: center;
+			border: 4px solid #2a84eb;
 		}
 		.available {
 			position: absolute;
